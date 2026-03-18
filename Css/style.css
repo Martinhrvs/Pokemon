@@ -51,7 +51,6 @@ article img {
 figcaption {
     background-color: rgba(255, 255, 255, 0.5);
     position: relative;
-    /* Correction : espace pour le badge .types positionné en absolu */
     padding-top: 30px;
 }
 
@@ -73,7 +72,7 @@ ol {
     border-radius: 5px;
 }
 
-/* Filtre */
+/* Filtre génération */
 
 #filtre {
     display: flex;
@@ -127,31 +126,46 @@ select {
     color: #fa6141;
 }
 
-/* Filtres types */
+/* Boutons de filtre par type */
 
 #types {
-    display: flex;
-    justify-content: space-around;
+    display: none;
     flex-wrap: wrap;
-    margin: 5%;
-    width: 800px;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 5%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-#types > div {
-    width: 60px;
-    height: 60px;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 50%;
-    margin: 5px;
-}
-
-#types > div:hover {
-    transform: scale(1.2);
+.type-btn {
+    padding: 7px 16px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    font-size: 0.9em;
+    font-weight: bold;
     cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s, box-shadow 0.15s;
+    letter-spacing: 0.5px;
 }
 
-#types > div img {
-    width: 100%;
+.type-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.type-btn.active {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+    transform: scale(1.08);
+}
+
+.btn-all {
+    background-color: #555;
+    color: #fff;
+    border-color: #888;
+}
+
+.btn-all.active {
+    background-color: #222;
 }
