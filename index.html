@@ -14,10 +14,10 @@
 <header>
     <h1>PokéDex</h1>
     <section id="filtre">
-        <h2>Sélectionner la génération de Pokémon :</h2>
+        <h2>Sélectionner la génération :</h2>
         <div class="select">
-            <select>
-                <option value="">Tous</option>
+            <select id="genSelect">
+                <option value="0">Toutes les générations</option>
                 <option value="1">Génération 1</option>
                 <option value="2">Génération 2</option>
                 <option value="3">Génération 3</option>
@@ -30,8 +30,21 @@
             </select>
         </div>
     </section>
-    <div id="types"></div>
+
+    <section id="sort">
+        <h2>Trier par :</h2>
+        <div class="select">
+            <select id="sortCriteria">
+                <option value="name">Nom</option>
+                <option value="hp">Points de vie</option>
+                <option value="atk">Attaque</option>
+              
+            </select>
+        </div>
+    </section>
 </header>
+
+<section id="types"></section>
 
 <main></main>
 
