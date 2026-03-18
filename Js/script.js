@@ -55,10 +55,10 @@ function renderPokemons(list) {
                 <span class="types">${types.map(t => t.name).join(" / ")}</span>
                 <h2 style="margin: 0 0 10px 0; font-size: 1.4em;">${pokemon.name?.fr || "Inconnu"}</h2>
                 <ol>
-                    <li>❤️ PV : <strong>${pokemon.stats?.hp || 0}</strong></li>
-                    <li>⚔️ Attaque : <strong>${pokemon.stats?.atk || 0}</strong></li>
-                    <li>🛡️ Défense : <strong>${pokemon.stats?.def || 0}</strong></li>
-                    <li>⚡ Vitesse : <strong>${pokemon.stats?.vit || 0}</strong></li>
+                    <li> PV : <strong>${pokemon.stats?.hp || 0}</strong></li>
+                    <li> Attaque : <strong>${pokemon.stats?.atk || 0}</strong></li>
+                    <li> Défense : <strong>${pokemon.stats?.def || 0}</strong></li>
+                    <li> Vitesse : <strong>${pokemon.stats?.vit || 0}</strong></li>
                 </ol>
             </figcaption>
         </figure>
